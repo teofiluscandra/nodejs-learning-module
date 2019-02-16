@@ -1,0 +1,33 @@
+<% include ../partials/header.ejs %>
+<div class="container">
+    <% if (message) { %>
+        <p class="text-center text-danger"><%= message %></p>
+    <% } %>
+
+    <% if (student) { %>
+        <form action="" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label> First Name</label>
+                <input type="text" class="form-control" name="first_name" id="first-name" placeholder="First Name" value="<%= student.first_name %>" required>
+            </div>
+            <div class="form-group">
+                <label> Last Name</label>
+                <input type="text" class="form-control" name="last_name" id="last-name" placeholder="Last Name" value="<%= student.last_name %>" required>
+            </div>
+            <div class="form-group">
+                <label> Address</label>
+                <textarea class="form-control" name="address" id="address" cols="30" rows="10"><%= student.address %></textarea>
+            </div>
+            <div class="form-group">
+                    <label> Number</label>
+                <input type="number" class="form-control" name="number" id="number" placeholder="Number" value="<%= student.number %>" required>
+            </div>
+            <button type="submit" class="btn btn-primary float-right">Update</button>
+        </form>
+    <% } else { %>
+        <p class="text-center">Student Not Found. </p>
+    <% } %>
+</div>
+</div>
+</body>
+</html>
