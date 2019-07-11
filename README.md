@@ -1,10 +1,10 @@
-# Menggunakan Library atau Komponen Pre-Existing
+# NodeJS Learning Module
 
 > Modul ini akan menggunakan **ExpressJS** dan **MySQL**. Hasil dari program yang dibuat adalah aplikasi web untuk pengolahan data (Simpan, Baca, Ubah, Hapus) data siswa pada suatu sekolah.
 
 ## Getting Started
 
-1. Clone this repo ` $ git clone https://github.com/BDIDenpasarBCIC/J.620100.019.02-NodeJS-MySQL.git `
+1. Clone this repo
 2. NPM Install ` $ npm install `
 3. Add database and table
 
@@ -16,7 +16,6 @@ CREATE TABLE IF NOT EXISTS `students` (
   `address` text NOT NULL,
   `number` int(11) NOT NULL,
   `image` varchar(255) NOT NULL,
-  `user_name` varchar(20) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
 ```
@@ -26,4 +25,4 @@ CREATE TABLE IF NOT EXISTS `students` (
 
 ## Screenshot
 
-![Home Page](https://github.com/BDIDenpasarBCIC/J.620100.019.02-NodeJS-MySQL/blob/master/screenshot/screenshot1.png?raw=true)
+![Home Page](https://github.com/teofiluscandra/nodejs-learning-module/blob/master/screenshot/screenshot1.png?raw=true)
